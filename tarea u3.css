@@ -1,0 +1,29 @@
+body{
+    background: radial-gradient(circle farthest-side at center center, #0031ff 24%, #00e9ff 0%);
+}
+
+.imagen{
+    display: block;
+    margin:0 auto;
+    filter: grayscale(60%) sepia(54%) brightness(114%) saturate(333%) contrast(125%);
+}
+
+.destacados{
+    color: gold;
+    font-style: italic;
+}
+
+.destacados2{
+    color: teal;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h1{
+    color: silver;
+    font-family: 'Times New Roman';
+    font-size: 46px;
+    font-weight: bolder;
+    text-align: center;
+}
+
