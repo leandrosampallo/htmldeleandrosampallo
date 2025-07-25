@@ -1,0 +1,25 @@
+{
+  "name": "femaleanthropokemonalolanvulpix",
+  "version": "3.5.8",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-session": "^1.18.2",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "nodemon": "^3.1.10",
+    "random-animal-name": "^0.1.1",
+    "story-bricks": "^1.2.0"
+  },
+  "description": "hi my name is reikai hobatsu and i am a female anthro pokemon alolan vulpix who goes on adventures of a treasure hunter life that has a lot of foes like the cracha preto aka the black badge and ufe aka sao paulo 55 batalion of police special forces unit who are looking for power on cursed treasures that could have a negative impact on every timeline so what are you waiting for join me on my journey",
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
