@@ -1,0 +1,23 @@
+SELECT `nombre`, `apellido`, `trabajo` FROM `empleados`;
+
+SELECT `nombre`, `apellido`, `trabajo`, `edad` FROM `empleados` WHERE `trabajo` = "programador" OR `trabajo` = "Programador Senior";
+
+SELECT `id_emp`, `nombre`, `apellido`, `edad`, `salario` FROM `empleados` WHERE `edad` > 30;
+
+SELECT `apellido`, `edad`, `mail` FROM `empleados` WHERE `nombre` = "Juan";
+
+SELECT `id_emp`, `nombre`, `apellido`, `trabajo` FROM `empleados` WHERE `id_emp` BETWEEN 15 AND 20;
+
+SELECT `id_emp`, `nombre`, `apellido`, `trabajo`, `salario` FROM `empleados` WHERE `salario` < 80000;
+
+SELECT `id_emp`, `nombre`, `apellido`, `trabajo`, `salario` FROM `empleados` WHERE `salario` BETWEEN 75000 AND 90000;
+
+SELECT `id_emp`, `nombre`, `apellido`, `trabajo`, `edad`, `salario`, `mail` FROM `empleados` WHERE `apellido` LIKE "S%";
+
+SELECT `id_emp`, `nombre`, `apellido`, `trabajo`, `edad`, `salario`, `mail` FROM `empleados` WHERE `nombre` LIKE "%l";
+
+INSERT INTO `empleados`(`id_emp`, `nombre`, `apellido`, `trabajo`, `edad`, `salario`, `mail`) VALUES ('22','Francisco','Perez','Programador','26','90000','francisco@bignet.com');
+
+DELETE FROM `empleados` WHERE `nombre` = "Hernan";
+
+UPDATE `empleados` SET `salario`= 90000 WHERE `id_emp` = 14;
