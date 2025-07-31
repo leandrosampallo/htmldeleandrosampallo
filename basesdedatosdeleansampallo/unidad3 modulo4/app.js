@@ -32,7 +32,32 @@ pool.query('select * from empleados').then(function(resultados){
 
 pool.query('select nombre, apellido, edad, trabajo from empleados').then(function(resultados){
   console.log(resultados)
-})
+});
+
+var salario1 = 148000
+
+pool.query('select nombre, apellido, edad, trabajo, salario from empleados where salario<?', [salario1]).then(function(resultados){
+  console.log(resultados)
+});
+
+//var obj1 = {
+//  nombre: 'Pedro',
+//  apellido: 'Dharma',
+//  trabajo: 'Especialista Multimedia',
+//  edad: 47,
+//  salario: 158000,
+//  mail: 'pedrodharma@bignet.com'
+//}
+
+//pool.query('insert into empleados set ?', [obj1]).then(function(resultados){
+//  console.log(resultados)
+//});
+
+var salario2 = 188600
+
+pool.query('select nombre, apellido, edad, trabajo, salario, mail from empleados where salario<?', [salario2]).then(function(resultados){
+  console.log(resultados)
+});
 
 
 // catch 404 and forward to error handler
