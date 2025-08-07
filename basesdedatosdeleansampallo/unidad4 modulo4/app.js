@@ -36,8 +36,8 @@ app.use(session({
 
 secured = async(req, res, next) => {
   try {
-    console.log(req.session.Id_usuario);
-    if (req.session.Id_usuario) {
+    //console.log(req.session.Id_usuario);
+    if (req.session.id_usuario) {
       next();
     } else {
       res.redirect("/admin/login")
