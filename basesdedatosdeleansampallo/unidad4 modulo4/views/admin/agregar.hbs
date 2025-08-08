@@ -1,0 +1,110 @@
+<div class="container-fluid">
+    <div id="Home" class="row align-items-center hero">
+        <div class="col-lg-1 offset-lg-1">
+            <p>bajada</p>
+            <h1>titulo principal</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aspernatur, in nam quasi, aperiam
+                perspiciatis quos libero soluta cumque veritatis laboriosam reiciendis ut qui quod fugiat alias,
+                mollitia molestias incidunt!</p>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-3">
+        <div class="col">
+            <div class="card">
+                <img src="../../images/marquez skell.png" class="card-img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural
+                        lead-in
+                        to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="../../images/hongying skell.png" class="card-img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural
+                        lead-in
+                        to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="../../images/akaihime skell base.png" class="card-img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural
+                        lead-in
+                        to
+                        additional content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="../../images/akaihime skell harusilk.png" class="card-img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural
+                        lead-in
+                        to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="../../images/erwin-arwin skell field medic commander.png" class="card-img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural
+                        lead-in
+                        to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="../../images/erwin-arwin skell base.png" class="card-img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural
+                        lead-in
+                        to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-6">
+        <h4>aca empieza la nueva novedad</h4>
+    </div>
+    <div class="mt-6"></div>
+    <div class="container" style="margin:100px auto">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <h4>Agregar una nueva novedad</h4>
+                <form action="/admin/novedades/agregar" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Titulo" name="titulo">
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" placeholder="Subtitulo" name="subtitulo"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" placeholder="Cuerpo" name="cuerpo"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </form>
+                {{#if error}}
+                    <h5>{{message}}</h5>
+                {{/if}}
+            </div>
+        </div>
+    </div>

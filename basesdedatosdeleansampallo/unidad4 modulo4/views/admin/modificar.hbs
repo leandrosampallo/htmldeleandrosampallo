@@ -1,0 +1,113 @@
+<div class="container-fluid">
+    <div id="Home" class="row align-items-center hero">
+        <div class="col-lg-1 offset-lg-1">
+            <p>bajada</p>
+            <h1>titulo principal</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione aspernatur, in nam quasi, aperiam
+                perspiciatis quos libero soluta cumque veritatis laboriosam reiciendis ut qui quod fugiat alias,
+                mollitia molestias incidunt!</p>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-3">
+        <div class="col">
+            <div class="card">
+                <img src="/images/marquez skell.png" class="card-img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural
+                        lead-in
+                        to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/images/hongying skell.png" class="card-img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural
+                        lead-in
+                        to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/images/akaihime skell base.png" class="card-img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural
+                        lead-in
+                        to
+                        additional content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/images/akaihime skell harusilk.png" class="card-img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural
+                        lead-in
+                        to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/images/erwin-arwin skell field medic commander.png" class="card-img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural
+                        lead-in
+                        to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/images/erwin-arwin skell base.png" class="card-img-fluid" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural
+                        lead-in
+                        to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-6">
+        <h4>aca empieza la modificacion de la novedad seleccionada</h4>
+    </div>
+    <div class="mt-6"></div>
+    <div class="contanier" style="margin:50px auto">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <h4>Modificar la novedad</h4>
+                <form method="post" action="/admin/novedades/modificar">
+                    <input type="hidden" value="{{novedad.id}}" name="id">
+                    <div class="form-group">
+                        <input type="text" placeholder="Titulo" value="{{novedad.titulo}}" class="form-control"
+                            name="titulo">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Subtitulo" class="form-control"
+                            name="subtitulo">{{novedad.subtitulo}}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Cuerpo" class="form-control" name="cuerpo">{{novedad.cuerpo}}</textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Modificar</button>
+                </form>
+                {{#if error}}
+                    <h5>{{message}}</h5>
+                {{/if}}
+            </div>
+        </div>
+    </div>
